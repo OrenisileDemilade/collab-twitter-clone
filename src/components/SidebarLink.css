@@ -1,0 +1,12 @@
+.sidebar-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+.sidebar-links:hover{
+    border-radius: 50%;
+    background-color: #575f6d;
+    cursor: pointer;
+}
