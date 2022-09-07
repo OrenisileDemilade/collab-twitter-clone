@@ -15,7 +15,6 @@
 .twitter-icon{
     display: flex;
     align-items: center;
-<<<<<<< HEAD
     justify-content: center;
     width: 60px;
     height: 60px;
@@ -26,12 +25,6 @@
     font-size: 7rem;
     color:blue;
 
-=======
-    justify-content: flex-end;
-    width: 56px;
-    height: 56px;
-    padding-left: 2.4rem;
->>>>>>> 839725dd9ecbde26a154d25e03a285e001eb81d5
 }
 .twitter-icon:hover{
     border-radius: 50%;
