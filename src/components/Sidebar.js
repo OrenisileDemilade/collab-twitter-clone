@@ -18,21 +18,7 @@ function Sidebar() {
   return (
     <div className='sideBar'>
       <div className='twitter-icon'>
-<<<<<<< HEAD
-        <TwitterIcon className='work' />
-      </div>
-      <div className='sidebarLinks'>
-        <SidebarLink Icon={HomeIcon} text='Home' />
-        <SidebarLink Icon={TagIcon} text='Explore' />
-        <SidebarLink Icon={NotificationsNoneOutlinedIcon} text='Notifications' />
-        <SidebarLink Icon={EmailOutlinedIcon} text='Messages' />
-        <SidebarLink Icon={BookmarkBorderOutlinedIcon} text='Bookmarks' />
-        <SidebarLink Icon={AssignmentOutlinedIcon} text='Lists' />
-        <SidebarLink Icon={PersonOutlineOutlinedIcon} text='Profile' />
-        <SidebarLink Icon={PendingOutlinedIcon} text='More' />
-=======
         <TwitterIcon className='icon' fontSize='large'/>
->>>>>>> 839725dd9ecbde26a154d25e03a285e001eb81d5
       </div>
       <ul className='sidebarLinks'>
         <li><SidebarLink Icon={HomeIcon} text='Home' /></li>
