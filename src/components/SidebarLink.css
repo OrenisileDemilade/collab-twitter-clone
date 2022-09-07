@@ -10,3 +10,7 @@
     background-color: #575f6d;
     cursor: pointer;
 }
+
+.sidebar-links .sidebar-icon {
+    font-size: 3.2rem;
+}
