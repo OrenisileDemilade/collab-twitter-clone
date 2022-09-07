@@ -18,18 +18,18 @@ function Sidebar() {
   return (
     <div className='sideBar'>
       <div className='twitter-icon'>
-        <TwitterIcon fontSize='large'/>
+        <TwitterIcon className='icon' fontSize='large'/>
       </div>
-      <div className='sidebarLinks'>
-        <SidebarLink Icon={HomeIcon} text='Home' />
-        <SidebarLink Icon={TagIcon} text='Explore' />
-        <SidebarLink Icon={NotificationsNoneOutlinedIcon} text='Notifications' />
-        <SidebarLink Icon={EmailOutlinedIcon} text='Messages' />
-        <SidebarLink Icon={BookmarkBorderOutlinedIcon} text='Bookmarks' />
-        <SidebarLink Icon={AssignmentOutlinedIcon} text='Lists' />
-        <SidebarLink Icon={PersonOutlineOutlinedIcon} text='Profile' />
-        <SidebarLink Icon={PendingOutlinedIcon} text='More' />
-      </div>
+      <ul className='sidebarLinks'>
+        <li><SidebarLink Icon={HomeIcon} text='Home' /></li>
+        <li><SidebarLink Icon={TagIcon} text='Explore' /></li>
+        <li><SidebarLink Icon={NotificationsNoneOutlinedIcon} text='Notifications' /></li>
+        <li><SidebarLink Icon={EmailOutlinedIcon} text='Messages' /></li>
+        {/* <li><SidebarLink Icon={BookmarkBorderOutlinedIcon} text='Bookmarks' /></li> */}
+        {/* <li><SidebarLink Icon={AssignmentOutlinedIcon} text='Lists' /></li> */}
+        <li><SidebarLink Icon={PersonOutlineOutlinedIcon} text='Profile' /></li>
+        <li><SidebarLink Icon={PendingOutlinedIcon} text='More' /></li>
+      </ul>
       <Tooltip title='Tweet' enterDelay={300} >
         <button className='tweet'>
           <EditOutlinedIcon fontSize='large'/>
