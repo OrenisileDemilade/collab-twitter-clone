@@ -1,14 +1,15 @@
 .header{
-    height: 4.4rem;
-    padding: 0.5rem 3.2rem;
-    position: relative;
+    height: 5.9rem;
+    padding: 1rem 3.2rem;
+    position: fixed;
+    background-color: black;
 }
 
 .header input {
     padding: 1.4rem 0;
-    padding-left: 6.4rem;
+    padding-left: 5.4rem;
     background-color: #202327;
-    width: 30rem;
+    width: 34rem;
     /* border: 1px solid #ccc; */
     border: none;
     border-radius: 100px;
@@ -16,7 +17,7 @@
 
 .search {
     position: absolute;
-    top: 54%;
+    top: 58%;
     left: 5.4rem;
     transform: translateY(-50%);
 }
