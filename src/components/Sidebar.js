@@ -18,7 +18,7 @@ function Sidebar() {
   return (
     <div className='sideBar'>
       <div className='twitter-icon'>
-        <TwitterIcon fontSize='large'/>
+        <TwitterIcon className='work' />
       </div>
       <div className='sidebarLinks'>
         <SidebarLink Icon={HomeIcon} text='Home' />
