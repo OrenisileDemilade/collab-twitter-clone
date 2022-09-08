@@ -33,6 +33,9 @@
     width: 99%;
     min-height: 5rem;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 .close-icon-container{
     position: relative;
 }
@@ -107,4 +110,22 @@
     margin-left: -4rem;
     max-width: 32rem;
     border-radius: 2rem;
+}
+.tweet-btn{
+    background-color: #1d9bf0;
+    color: #fff;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    border-radius: 1.6rem;
+    font-weight: bold;
+    outline: none;
+}
+.tweet-btn:hover{
+    background-color: #1a8cd8;
+}
+
+.disabled:hover{
+    background-color: #1d9bf0;
 }

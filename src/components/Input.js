@@ -19,7 +19,15 @@ function Input() {
   const [selectedFile, setSelectedFile] = useState(null)
   const filePickerRef = useRef(null)
   const addImageToPost = () => {}
-  const [showEmojis, setShowEmojis] = useState(false)
+  const [showEmojis, setShowEmojis] = useState(false);
+
+  const addEmoji = (e) => {
+    let sym = e.unified.split("-");
+    let codesArray = [];
+    sym.forEach((el) => codesArray.push("0x" + el));
+    let emoji = String.fromCodePoint(...codesArray);
+    setInput(input + emoji);
+  };
 
   return (
     <div className='input'>
@@ -55,7 +63,7 @@ function Input() {
                    <LeaderboardOutlinedIcon fontSize='large' />
                 </div>
 
-                <div className='photo-icon-container' onClick={() => setShowEmojis (!showEmojis)} >
+                <div className='photo-icon-container' onClick={() => setShowEmojis(!showEmojis)}>
                    <SentimentSatisfiedAltOutlinedIcon fontSize='large' />
                 </div>
 
@@ -68,14 +76,19 @@ function Input() {
               <div className='picker' >
                 {showEmojis && (
                   <Picker className="picker"
-                  // onSelect={addEmoji}
+                  onSelect={addEmoji}
                   theme="dark"
                   />
                 )}         
               </div>  
-
-
               </div>
+
+              <button className='tweet-btn'
+               disabled={!input.trim() && !selectedFile } 
+              // onClick={sendPost} 
+              >Tweet</button>
+
+
             </div>
             
         </div>
