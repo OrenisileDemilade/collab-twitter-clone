@@ -1,8 +1,11 @@
 .sideBar{
     color: #fff;
     margin-left: 7rem;
-    position: fixed ;
+    /* position: fixed ; */
     align-items: center;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /* .container {

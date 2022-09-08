@@ -3,6 +3,7 @@
     padding: 1rem 3.2rem;
     position: fixed;
     background-color: black;
+    /* z-index: -1; */
 }
 
 .header input {

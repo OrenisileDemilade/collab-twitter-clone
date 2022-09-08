@@ -1,0 +1,38 @@
+.footer {
+    height: 6rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 0;
+    right: 5rem;
+}
+.new_message {
+    padding: 0 1.4rem;
+    background-color: #000;
+    /* position: absolute; */
+    z-index: 100;
+    /* bottom: 100vh; */
+    right: 3.2rem;
+    width: 38rem;
+    box-shadow: 0 0px 10px rgb(225 225 225 / 38%);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+.new_message p {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+}
