@@ -11,6 +11,9 @@ import data from '@emoji-mart/data'
 import Picker from '@emoji-mart/react'
 
 
+
+
+
 function Input() {
   const [input, setInput] = useState("")
   const [selectedFile, setSelectedFile] = useState(null)
@@ -60,20 +63,16 @@ function Input() {
                    <TodayOutlinedIcon fontSize='large' />
                 </div>      
 
+              
+
+              <div className='picker' >
                 {showEmojis && (
-                  <Picker 
+                  <Picker className="picker"
                   // onSelect={addEmoji}
-                  style={{
-                    position:"absolute",
-                    marginTop:"46.5rem",
-                    marginLeft:"-4rem",
-                    maxWidth:"32rem",
-                    borderRadius:"2rem"
-                  }} 
                   theme="dark"
                   />
                 )}         
-                
+              </div>  
 
 
               </div>
