@@ -7,8 +7,11 @@ import GifBoxOutlinedIcon from '@mui/icons-material/GifBoxOutlined';
 import LeaderboardOutlinedIcon from '@mui/icons-material/LeaderboardOutlined';
 import SentimentSatisfiedAltOutlinedIcon from '@mui/icons-material/SentimentSatisfiedAltOutlined';
 import TodayOutlinedIcon from '@mui/icons-material/TodayOutlined';
-// import data from '@emoji-mart/data'
-// import Picker from '@emoji-mart/react'
+import data from '@emoji-mart/data'
+import Picker from '@emoji-mart/react'
+
+
+
 
 
 function Input() {
@@ -60,20 +63,16 @@ function Input() {
                    <TodayOutlinedIcon fontSize='large' />
                 </div>      
 
-                {/* {showEmojis && (
-                  <Picker 
+              
+
+              <div className='picker' >
+                {showEmojis && (
+                  <Picker className="picker"
                   // onSelect={addEmoji}
-                  style={{
-                    position:"absolute",
-                    marginTop:"46.5rem",
-                    marginLeft:"-4rem",
-                    maxWidth:"32rem",
-                    borderRadius:"2rem"
-                  }} 
                   theme="dark"
                   />
-                )}          */}
-                
+                )}         
+              </div>  
 
 
               </div>

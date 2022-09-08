@@ -101,3 +101,10 @@
     opacity: 1;
     transition: ease-out;
 }
+.picker{
+    position: absolute;
+    margin-top: 47.5rem;
+    margin-left: -4rem;
+    max-width: 32rem;
+    border-radius: 2rem;
+}
