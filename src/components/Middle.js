@@ -5,6 +5,8 @@ import Input from './Input';
 
 
 function middle() {
+
+
   return (
     <div className='middle'>
       <div className='first-section'>
@@ -16,6 +18,9 @@ function middle() {
 
       <Input/>
 
+        <div className='post-container'>
+          
+        </div>
     </div>
   )
 }

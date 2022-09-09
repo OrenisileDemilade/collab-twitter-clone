@@ -122,12 +122,11 @@
     padding-bottom: 0.4rem;
     border-radius: 1.6rem;
     font-weight: bold;
+    text-decoration: none;
     border: none;
 }
 .tweet-btn:hover{
     background-color: #1a8cd8;
 }
 
-.disabled:hover{
-    background-color: #1d9bf0;
-}
+

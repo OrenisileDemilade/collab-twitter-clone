@@ -99,6 +99,7 @@ function Input() {
             )}
           </div>
 
+          {!loading &&
             <div className='middle-icons-container'>
               <div className='middle-icons'>
                 <div className='photo-icon-container' onClick={() => filePickerRef.current.click()} >
@@ -134,14 +135,14 @@ function Input() {
               </div>  
               </div>
 
-              <button className='tweet-btn'
+              <button className='tweet-btn' 
                disabled={!input.trim() && !selectedFile } 
               onClick={sendPost} 
               >Tweet</button>
 
 
             </div>
-            
+            }
         </div>
         
       </div>
