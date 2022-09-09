@@ -114,13 +114,15 @@
 .tweet-btn{
     background-color: #1d9bf0;
     color: #fff;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
+    margin-bottom: 0.7rem;
+    margin-right: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
     border-radius: 1.6rem;
     font-weight: bold;
-    outline: none;
+    border: none;
 }
 .tweet-btn:hover{
     background-color: #1a8cd8;
