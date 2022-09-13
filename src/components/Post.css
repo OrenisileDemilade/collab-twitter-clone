@@ -1,0 +1,47 @@
+.post-container{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+.post{
+    display: flex;
+    align-items: flex-start;
+}
+.post-avatar{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+.post-body{
+    padding-left: 1rem;
+}
+.name{
+    display: flex;
+}
+.display-name{
+    font-weight: bold;
+    font-size: 17px;
+}
+.verified{
+    font-size: 17px;
+}
+.user-name{
+    color: #ccc;
+    font-weight: lighter;
+    font-size: 17px;
+}
+.text{
+    font-size: 15px;
+    margin-bottom: 1.5                                                                  rem;
+}
+.post-image{
+    width: 53rem;
+    border-radius: 2rem;
+}
+.post-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-right: 6rem;
+}
