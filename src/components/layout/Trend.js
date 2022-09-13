@@ -64,7 +64,8 @@ export default function Trend() {
   const trends = Object.keys(dummyData[0]);
   console.log(trends);
   return (
-      <ul className={classes.trends}>
+    <ul className={classes.trends}>
+      {/* <p className={classes.test} style={{width:'100%', color:'green', backgroundColor:'red'}}>hello</p> */}
           {dummyData.map(trend => {
               console.log(trend)
               return <li>

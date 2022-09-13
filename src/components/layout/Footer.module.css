@@ -20,16 +20,18 @@
     border-top-right-radius: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
  }
 
 .new_message p {
+    margin-top: 1rem;
     color: #fff;
     font-size: 1.8rem;
     font-weight: 600;
   }
 
 .icons {
+    margin-top: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;

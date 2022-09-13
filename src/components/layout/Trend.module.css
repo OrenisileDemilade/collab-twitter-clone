@@ -18,6 +18,12 @@
     align-items: center;
 }
 
+.test {
+    position: sticky;
+    top: 0;
+    height: 30rem;
+}
+
 .content {
     display: flex;
     flex-direction: column;
