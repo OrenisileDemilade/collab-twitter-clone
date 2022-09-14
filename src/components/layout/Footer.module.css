@@ -5,7 +5,12 @@
     justify-content: flex-end;
     position: fixed;
     bottom: 0;
-    right: 5rem;
+    right: 1.5rem;
+    transition: all 0.4s;
+}
+
+.show_message {
+    height: 77vh;
 }
 .new_message {
     padding: 0 1.4rem;
@@ -14,7 +19,7 @@
     z-index: 100;
     /* bottom: 100vh; */
     right: 3.2rem;
-    width: 38rem;
+    width: 42rem;
     box-shadow: 0 0px 10px rgb(225 225 225 / 38%);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;

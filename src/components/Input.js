@@ -8,15 +8,6 @@ import LeaderboardOutlinedIcon from '@mui/icons-material/LeaderboardOutlined';
 import SentimentSatisfiedAltOutlinedIcon from '@mui/icons-material/SentimentSatisfiedAltOutlined';
 import TodayOutlinedIcon from '@mui/icons-material/TodayOutlined';
 import Picker from '@emoji-mart/react'
-import { db, storage } from "../firebase";
-import {
-  addDoc,
-  collection,
-  doc,
-  serverTimestamp,
-  updateDoc,
-} from "@firebase/firestore";
-import { getDownloadURL, ref, uploadString } from "@firebase/storage";
 
 
 
@@ -52,31 +43,6 @@ function Input() {
   const sendPost = async () => {
     if (loading) return;
     setLoading(true);
-    
-    const docRef = await addDoc(collection(db,'posts'), {
-      // id: session.user.uid,
-      // username: session.user.name,
-      // userImg: session.user.image,
-      // tag: session.user.tag,
-      text: input,
-      timestamp: serverTimestamp(),
-    });
-
-    const imageRef = ref(storage, `posts/${docRef.id}/image`);
-
-    if (selectedFile){
-      await uploadString(imageRef, selectedFile, "data_url").then(async () => {
-        const downloadURL = await getDownloadURL (imageRef)
-        await updateDoc(doc(db, "posts", docRef.id),{
-          image: downloadURL,
-        });
-      });
-    }
-
-    setLoading(false);
-    setInput("");
-    setSelectedFile(null);
-    setShowEmojis(false);
   };
 
 
@@ -99,6 +65,7 @@ function Input() {
             )}
           </div>
 
+          {!loading &&
             <div className='middle-icons-container'>
               <div className='middle-icons'>
                 <div className='photo-icon-container' onClick={() => filePickerRef.current.click()} >
@@ -134,14 +101,14 @@ function Input() {
               </div>  
               </div>
 
-              <button className='tweet-btn'
+              <button className='tweet-btn' 
                disabled={!input.trim() && !selectedFile } 
               onClick={sendPost} 
               >Tweet</button>
 
 
             </div>
-            
+            }
         </div>
         
       </div>

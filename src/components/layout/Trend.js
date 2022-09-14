@@ -65,10 +65,12 @@ export default function Trend() {
   console.log(trends);
   return (
     <ul className={classes.trends}>
+      <p className={classes.header_heading}>Trends for you</p>
       {/* <p className={classes.test} style={{width:'100%', color:'green', backgroundColor:'red'}}>hello</p> */}
           {dummyData.map(trend => {
               console.log(trend)
-              return <li>
+            return <div className={classes.trend}>
+            <li>
                   <div className={classes.content}>
                       <div className={classes.heading_container}>
                           <p className={classes.heading}>{trend.heading}</p>
@@ -80,6 +82,7 @@ export default function Trend() {
                       <p className={classes.tweets}>{trend.tweets} tweets</p>
                   </div>
               </li>
+            </div>
           })}
     </ul>
   );
