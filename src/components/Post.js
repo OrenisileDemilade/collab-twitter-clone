@@ -10,16 +10,28 @@ function Post({displayName, username, verified,text,image,avatar,}) {
         <div className='post-body'>
             <div className='name'>
                 <div className='display-name'>{displayName}</div>    
-                <div className='verified'>{verified}</div>
+               {verified && <div className='verified'>{verified}</div>}
                 <div className='user-name'>{username}</div>
             </div>
             <p className='text'>{text}</p>
             <img className='post-image' src={image} alt=''/>
             <div className='post-footer'>
-                <ChatBubbleOutline fontSize='large'/>
-                <Repeat fontSize='large'/>
-                <FavoriteBorder fontSize='large'/>
-                <Publish fontSize='large'/>
+              <div className='chat-bubble-container'>
+                <ChatBubbleOutline className='chat-bubble' fontSize='large'/>
+              </div>
+              <div className='repeat-container'>
+                <Repeat className='repeat' fontSize='large'/>
+              </div>
+              <div className='favorite-container'>
+                <FavoriteBorder className='favorite-border' fontSize='large'/>
+              </div>
+              <div className='publish-container'>
+                <Publish className='publish' fontSize='large'/>
+              </div>
+                
+                
+                
+                
             </div>
         </div>
       </div>

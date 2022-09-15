@@ -10,6 +10,7 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import PendingOutlinedIcon from '@mui/icons-material/PendingOutlined';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
+import { BookmarkAddOutlined, ListAltOutlined } from '@mui/icons-material';
 
 
 function Sidebar() {
@@ -23,6 +24,8 @@ function Sidebar() {
         <li><SidebarLink Icon={TagIcon} text='Explore' /></li>
         <li><SidebarLink Icon={NotificationsNoneOutlinedIcon} text='Notifications' /></li>
         <li><SidebarLink Icon={EmailOutlinedIcon} text='Messages' /></li>
+        <li><SidebarLink Icon={BookmarkAddOutlined} text='Messages' /></li>
+        <li><SidebarLink Icon={ListAltOutlined} text='Messages' /></li>
         <li><SidebarLink Icon={PersonOutlineOutlinedIcon} text='Profile' /></li>
         <li><SidebarLink Icon={PendingOutlinedIcon} text='More' /></li>
       </ul>
@@ -31,6 +34,7 @@ function Sidebar() {
           <EditOutlinedIcon fontSize='large'/>
         </button> 
       </Tooltip>
+      
       <div className='image-box'>
         <img className='image' src='https://cdn.pixabay.com/photo/2017/09/25/13/12/cocker-spaniel-2785074__480.jpg' alt=''/>
       </div>

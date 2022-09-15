@@ -1,13 +1,14 @@
 import React from 'react'
 import './Middle.css'
 import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
-import VerifiedIcon from '@mui/icons-material/Verified';
 import Input from './Input';
 import Post from './Post';
+import { Verified } from '@mui/icons-material';
 
 
-function middle() {
 
+function Middle() {
+ 
 
   return (
     <div className='middle'>
@@ -20,27 +21,26 @@ function middle() {
 
       <Input/>
 
+    
       <Post
-      avatar="https://cdn.pixabay.com/photo/2017/09/25/13/12/cocker-spaniel-2785074__480.jpg"
-      verified={<VerifiedIcon/>}
-      displayName="Boogie"
-      username="@boogieman"
-      text="So the sacked dancing security men went abroad with their uniforms & continue dancing. 
-      I love Nigerians "
-      image="https://cdn.pixabay.com/photo/2015/02/04/17/18/space-624054__480.jpg"
-      />
-       <Post
-      avatar="https://cdn.pixabay.com/photo/2017/09/25/13/12/cocker-spaniel-2785074__480.jpg"
-      verified={<VerifiedIcon/>}
-      displayName="Boogie"
-      username="@boogieman"
-      text="So the sacked dancing security men went abroad with their uniforms & continue dancing. 
-      I love Nigerians "
-      image="https://cdn.pixabay.com/photo/2015/02/04/17/18/space-624054__480.jpg"
-      />
+      displayName="St.demo"
+      username="@boogie"
       
+      text="hello nature"
+      image="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297__480.jpg"
+      avatar="https://cdn.pixabay.com/photo/2015/04/20/17/38/couple-731890__480.jpg"
+       />
+       <Post
+      displayName="Anonymous"
+      username="@dhannylite"
+      
+      text="I'm doing NFT and i'm in trouble cause i'm wasting the money on FOREX.. Someone please help me."
+      image="https://cdn.pixabay.com/photo/2022/02/10/09/39/nft-7004985__480.jpg"
+      avatar="https://cdn.pixabay.com/photo/2015/07/15/09/00/man-845847__480.jpg"
+       />
+   
     </div>
   )
 }
 
-export default middle
+export default Middle

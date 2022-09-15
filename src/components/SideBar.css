@@ -36,9 +36,9 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1.4rem;
+    gap: 1rem;
     margin-left: 4rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: #fff;
 }
 .tweet{
@@ -65,8 +65,8 @@
     width: 60px;
     height: 60px;
     padding: 0;
-    line-height: 2rem;
-    margin-top: 90px;
+    /* line-height: 2rem; */
+    margin-top: 4rem;
     margin-left: 3.5rem;
 }
 .image-box:hover{

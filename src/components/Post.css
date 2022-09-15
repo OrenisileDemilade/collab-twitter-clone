@@ -1,7 +1,8 @@
 .post-container{
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    border-bottom:  1px solid #374151;
 }
 .post{
     display: flex;
@@ -44,4 +45,61 @@
     justify-content: space-between;
     margin-top: 1rem;
     margin-right: 6rem;
+    margin-bottom: 1rem;
+}
+.chat-bubble-container{
+    color: rgb(113, 118, 123);
+    border-radius: 50%;
+    cursor: pointer; 
+    display: flex;
+    width: 3.2rem;
+    height: 3.2rem;  
+    align-items: center;
+    justify-content: center;
+}
+.chat-bubble-container:hover{
+    background-color: #aac7f7;
+    color: #5a5aeb;
+}
+.repeat-container{
+    color: rgb(113, 118, 123);
+    border-radius: 50%;
+    cursor: pointer; 
+    display: flex;
+    width: 3.2rem;
+    height: 3.2rem;  
+    align-items: center;
+    justify-content: center; 
+}
+.repeat-container:hover{
+    color: red;
+    background-color: rgb(252, 199, 199);
+}
+.favorite-container{
+    color: rgb(113, 118, 123);
+    border-radius: 50%;
+    cursor: pointer; 
+    display: flex;
+    width: 3.2rem;
+    height: 3.2rem;  
+    align-items: center;
+    justify-content: center; 
+}
+.favorite-container:hover{
+    color: green;
+    background-color: rgb(165, 228, 165);
+}
+.publish-container{
+    color: rgb(113, 118, 123);
+    border-radius: 50%;
+    cursor: pointer; 
+    display: flex;
+    width: 3.2rem;
+    height: 3.2rem;  
+    align-items: center;
+    justify-content: center; 
+}
+.publish-container:hover{
+    background-color: #aac7f7;
+    color: #5a5aeb;
 }
