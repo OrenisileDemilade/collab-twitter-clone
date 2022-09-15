@@ -1,21 +1,43 @@
 .trends {
     list-style: none;
-    padding: 1.6rem;
+    /* padding: 1.6rem; */
     background-color: #16181c;
     max-width: 34rem;
     width: 90%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
+    /* gap: 2.4rem; */
     /* height: 100%;
     overflow: scroll; */
+}
+
+.header_heading {
+    color: #fff;
+    padding: 1.5rem;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.trends li {
+    padding: 1.6rem;
+}
+
+.trend:hover {
+    background-color: #1a1c21;
 }
 
 .heading_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.test {
+    position: sticky;
+    top: 0;
+    height: 30rem;
 }
 
 .content {
